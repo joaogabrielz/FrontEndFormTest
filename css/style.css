@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, input, textarea {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: rebeccapurple;
+  color: #071723;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+.main {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  overflow: hidden;
+  max-width: 550px;
+}
+
+@media (max-width: 550px) {
+  .main {
+    margin:0;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
+
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+
+.errorCheck {
+  background-color: #F59393 !important;
+}
+
+.errorInput {
+  background-color: #F59393 !important;
+  border: 1px solid #F33232 !important;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header {
+  background: url("../assets/imgs/header.png") center  no-repeat;
+  background-size: cover;
+  height: 187px;
+  padding: 23px 36px;
+  width: 100%;
+}
+
+.header .title {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.header .title span.bold {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.46;
+}
+
+.block {
+  display: block;
+}
+
+
+#form textarea {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 4px;
+  color: #071723;
+  min-height: 140px;
+  padding: 20px;
+  resize: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.fieldset {
+  padding: 0 32px;
+}
+
+
+.fieldset.stickersSection li{
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+}
+
+input[type="checkbox"].checkBox {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background-color: #2F3676;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type="checkbox"].checkBox:hover,
+input[type="checkbox"].checkBox:focus {
+  background-color: #191847;
+}
+
+input[type="checkbox"].checkBox:after {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 38%;
+
+  width: 15%;
+  height: 35%;
+
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
+input[type="checkbox"].checkBox:checked:after {
+  display: block;
+}
+
+
+.counterSection .quantitySection {
+  display: flex;
+  gap: 8px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+.counterSection input {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 60px;
+  text-align: center;
+}
+
+.counterSection button {
+  background-color: #2F3676;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counterSection button:hover,
+.counterSection button:focus {
+  background: #191847;
+}
+
+
+
+input[type="checkbox"]:disabled,
+input[type="checkbox"]:disabled:hover,
+input[type="checkbox"]:disabled:focus{
+  background: #C5CFD6;
+  cursor: auto;
+  cursor: auto;
+}
+
+
+button.increment:disabled,
+button.decrement:disabled,
+button.increment:disabled:hover,
+button.increment:disabled:focus,
+button.decrement:disabled:hover 
+button.decrement:disabled:focus {
+  background: #C5CFD6;   
+  cursor: auto;    
+}
+
+button.send:disabled,
+button.send:disabled:hover,
+button.send:disabled:focus{
+  background: #C5CFD6;
+  border: 2px solid #555555;
+  color: #555555;
+  cursor: auto;
+}
+
+
+
+.footer {
+  padding: 32px;
+  background: #dde3e9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.footer span {
+  font-size: 18px;
+  line-height: 21px;
+  color: #00C57C;
+}
+
+.display-none {
+  display: hidden;
+}
+
+.footer button {
+  appearance: none;
+  background: #2f3676;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 32px;
+  border: 2px solid transparent;
+}
+
+.footer button:focus,
+.footer button:hover {
+  border: 2px solid #2f3676;
+  background: #191847;
+}
