@@ -39,6 +39,9 @@ li {
     height: 100%;
     overflow-y: scroll;
   }
+  .form{
+    height: 100%;
+  }
 }
 
 
