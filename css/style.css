@@ -8,11 +8,16 @@ html, input, textarea {
   font-family: "Inter", sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background: rebeccapurple;
   color: #071723;
   font-size: 14px;
   font-weight: 400;
+  height: 100%;
 }
 
 fieldset {
@@ -33,17 +38,18 @@ li {
   max-width: 550px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 550px){
   .main {
-    margin:0;
-    height: 100%;
-    overflow-y: scroll;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    overflow: auto;
+    height:  100%;
   }
-  .form{
-    height: 100%;
+  form {
+    margin-bottom: 130px;
   }
 }
-
 
 .mb-16 {
   margin-bottom: 16px;
@@ -242,7 +248,7 @@ button.send:disabled:focus{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .footer span {
