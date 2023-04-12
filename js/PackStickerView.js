@@ -73,14 +73,14 @@ class PackStickerView {
 
   </fieldset>
 
-  </form>
+  <fieldset class="footer">
 
-  <footer class="footer">
-
-    <span  aria-live="polite" class="${this.valid ? "" : "display-hidden"}">${this.valid ? "Formulário enviado com sucesso!" : ""}</span>
+    <span id="msg" aria-live="polite" class="${this.valid ? "" : "display-hidden"}">${this.valid ? "Formulário enviado com sucesso!" : ""}</span>
     <button class="send" type="submit">Enviar</button>
 
-  </footer>
+  </fieldset>
+
+  </form>
     `;
   }
 }

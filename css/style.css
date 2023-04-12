@@ -46,8 +46,8 @@ li {
     overflow: auto;
     height:  100%;
   }
-  form {
-    margin-bottom: 130px;
+  .footer {
+    margin-top: 130px;
   }
 }
 

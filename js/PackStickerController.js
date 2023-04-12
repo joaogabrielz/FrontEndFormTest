@@ -69,10 +69,22 @@ class PackStickerController {
       const pack = new PackSticker(checkboxesObj, range, obs);
 
       this.formContainer.innerHTML = new PackStickerView(pack, true).template();
+      this.resetData();
       this.bind();
+    }
+    else{
+      document.querySelector("#msg").innerHTML = "";
     }
   }
 
+  resetData(){
+    const checkBoxesList = document.querySelectorAll(".checkBox");
+    checkBoxesList.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+    document.querySelector('.range').value = "";
+    document.querySelector(".textArea").value = "";
+  }
 
   validateInput(){
     const rangeInput = document.querySelector('.range');
